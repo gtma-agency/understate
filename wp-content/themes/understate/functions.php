@@ -29,6 +29,7 @@ $understrap_includes = array(
 	'/editor.php',                          // Load Editor functions.
 	'/block-editor.php',                    // Load Block Editor functions.
 	'/deprecated.php',                      // Load deprecated functions.
+	'/custom-media-taxonomy.php',			// Add Custom Taxnomies for Media Library
 );
 
 // Load WooCommerce functions if WooCommerce is activated.
@@ -51,7 +52,8 @@ $block_inc_dir = "blocks";
 $blocks = array(
 	'/tabs.php',        // all utility tabs
 	'/hero.php',        // add a hero at the top of the page
-	'/columns.php',     // add a banner at the top of the page
+	'/columns.php',     // add a columns block
+	'/filterable-gallery.php', // add a filterable gallery
 );
 
 foreach ( $blocks as $file ) {
@@ -65,6 +67,7 @@ $sections
     ->addFlexibleContent('sections')
 		->addLayout($hero)
 		->addLayout($columns)
+		->addLayout($filterableGallery)
     ->setLocation('page_template', '==', 'default');
 
 add_action('acf/init', function() use ($sections) {

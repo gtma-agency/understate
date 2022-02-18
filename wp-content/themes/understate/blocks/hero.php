@@ -9,7 +9,7 @@ $hero
 ->addTab('Content')
     ->addText('heading')
     ->addWysiwyg('subhead')
-    ->addLink('CTA Button')
+    ->addLink('button')
 ->addTab('Background')
     ->addFields($backgroundSettings)
 ->addTab('Advanced')
