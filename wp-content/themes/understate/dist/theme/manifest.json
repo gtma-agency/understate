@@ -2,10 +2,9 @@
   "main.css": "theme/main.css",
   "main.css.map": "theme/main.css.map",
   "main.js": "theme/main.js",
-  "main.js.map": "main.c632faca58f64ab2ba02.hot-update.js.map",
+  "main.js.map": "theme/main.js.map",
   "runtime.js": "theme/runtime.js",
   "runtime.js.map": "theme/runtime.js.map",
-  "theme/main.js.map": "theme/main.js.map",
   "vendors~main.js": "theme/vendors~main.js",
   "vendors~main.js.map": "theme/vendors~main.js.map",
   "wpackioEp": {
@@ -19,8 +18,7 @@
         "js.map": [
           "theme/runtime.js.map",
           "theme/vendors~main.js.map",
-          "theme/main.js.map",
-          "main.c632faca58f64ab2ba02.hot-update.js.map"
+          "theme/main.js.map"
         ],
         "css": [
           "theme/main.css"

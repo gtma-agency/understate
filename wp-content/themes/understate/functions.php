@@ -99,5 +99,6 @@ function adminScripts(){
     $res = $enq->enqueue( 'theme', 'admin',[] );
 }
 add_action( 'wp_enqueue_scripts','enqueScripts' );
+
 // add_action( 'admin_enqueue_scripts','adminScripts' );
 // add_action( 'enqueue_block_editor_assets','blockScripts' );
