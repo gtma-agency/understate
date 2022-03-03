@@ -9,7 +9,7 @@ $columns
 ->addTab('Content')
     ->addRepeater('columns', ['min' => 1, 'max' => 4, 'layout' => 'block'])
         ->addWysiwyg('content')
-        ->addLink('Button')
+        ->addLink('button')
     ->endRepeater()
 ->addTab('Background')
     ->addFields($backgroundSettings)

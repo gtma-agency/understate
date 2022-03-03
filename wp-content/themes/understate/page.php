@@ -19,7 +19,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
-<div class="wrapper" id="page-wrapper">
+<div class="wrapper p-0" id="page-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
@@ -33,12 +33,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php
 				while ( have_posts() ) {
 					the_post();
-					get_template_part( 'loop-templates/content', 'page' );
-
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) {
-						comments_template();
-					}
+					if( have_rows('sections') ):
+						while ( have_rows('sections') ) : the_row();
+							get_template_part( 'block-templates/block', get_row_layout() );
+						endwhile;
+					else :
+						// Do something...
+					endif;
 				}
 				?>
 

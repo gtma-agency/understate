@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInitbb6c2def14c97d972ad1bc02593bc4d0
 {
     public static $prefixLengthsPsr4 = array (
+        'W' => 
+        array (
+            'WPackio\\' => 8,
+        ),
         'S' => 
         array (
             'StoutLogic\\AcfBuilder\\' => 22,
@@ -18,6 +22,10 @@ class ComposerStaticInitbb6c2def14c97d972ad1bc02593bc4d0
     );
 
     public static $prefixDirsPsr4 = array (
+        'WPackio\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/wpackio/enqueue/inc',
+        ),
         'StoutLogic\\AcfBuilder\\' => 
         array (
             0 => __DIR__ . '/..' . '/stoutlogic/acf-builder/src',
