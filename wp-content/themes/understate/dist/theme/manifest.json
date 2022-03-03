@@ -1,0 +1,32 @@
+{
+  "main.css": "theme/main.css",
+  "main.css.map": "theme/main.css.map",
+  "main.js": "theme/main.js",
+  "main.js.map": "theme/main.js.map",
+  "runtime.js": "theme/runtime.js",
+  "runtime.js.map": "theme/runtime.js.map",
+  "vendors~main.js": "theme/vendors~main.js",
+  "vendors~main.js.map": "theme/vendors~main.js.map",
+  "wpackioEp": {
+    "main": {
+      "assets": {
+        "js": [
+          "theme/runtime.js",
+          "theme/vendors~main.js",
+          "theme/main.js"
+        ],
+        "js.map": [
+          "theme/runtime.js.map",
+          "theme/vendors~main.js.map",
+          "theme/main.js.map"
+        ],
+        "css": [
+          "theme/main.css"
+        ],
+        "css.map": [
+          "theme/main.css.map"
+        ]
+      }
+    }
+  }
+}
