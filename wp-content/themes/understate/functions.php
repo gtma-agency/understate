@@ -10,6 +10,7 @@ defined( 'ABSPATH' ) || exit;
 
 require_once('vendor/autoload.php');
 
+
 // UnderStrap's includes directory.
 $understrap_inc_dir = 'inc';
 
@@ -74,7 +75,7 @@ add_action('acf/init', function() use ($sections) {
     acf_add_local_field_group($sections->build());
  });
 
- // Require the composer autoload for getting conflict-free access to enqueue
+  // Require the composer autoload for getting conflict-free access to enqueue
 require_once __DIR__ . '/vendor/autoload.php';
 // Instantiate the Enque Class to load the compiled assets
 global $enq;
@@ -98,5 +99,5 @@ function adminScripts(){
     $res = $enq->enqueue( 'theme', 'admin',[] );
 }
 add_action( 'wp_enqueue_scripts','enqueScripts' );
-add_action( 'admin_enqueue_scripts','adminScripts' );
-add_action( 'enqueue_block_editor_assets','blockScripts' );
+// add_action( 'admin_enqueue_scripts','adminScripts' );
+// add_action( 'enqueue_block_editor_assets','blockScripts' );
