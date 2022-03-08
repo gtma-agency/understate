@@ -1,0 +1,61 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Lateef&display=swap');
+
+
+$font-family-sans-serif:   'Josefin Sans', sans-serif !default;
+$font-family-serif:        'Lateef', serif !default;
+$font-family-base:          $font-family-sans-serif !default;
+$font-size-base:            1.125rem !default;
+
+$blue:           #4F6FDC;
+$medium-grey:    #CBCBCB;
+$yellow:         #FCD467;
+$orange:         #F3B045;
+$off-white:      #F3F3F3;
+$light-grey:     #E8E8E8;
+$dark-grey:      #454142;
+$off-black:      #212322;
+$off-black-70:   #212322B3;
+$brown:          #A86E11;
+$mine-shaft:     #3A3637;
+$primary:          $orange;
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1500px
+) !default;
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1500px
+) !default;
+
+// $grid-breakpoints: (
+//     xs: 0,
+//     sm: 576px,
+//     md: 768px,
+//     lg: 1140px,
+//     xl: 1400px,
+//     xxl: 1640px
+// ) !default;
+
+// $container-max-widths: (
+//     sm: 540px,
+//     md: 720px,
+//     lg: 1140px,
+//     xl: 1400px,
+//     xxl: 1640px
+// ) !default;
+
+$hoverTransition: all .15s ease-in-out;
+$navbar-light-color: $dark-grey;
+// $navbar-padding-x: 30px !default;

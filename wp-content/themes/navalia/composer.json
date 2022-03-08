@@ -1,0 +1,6 @@
+{
+    "require": {
+        "wpackio/enqueue": "^3.4",
+        "stoutlogic/acf-builder": "^1.12"
+    }
+}
